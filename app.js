@@ -4,8 +4,9 @@ const app = express();
 const http = require('http').Server(app)
 const io = require('socket.io')(http);
 
+const port = process.env.PORT || 3030;
 
-http.listen(3030);
+http.listen(port);
 console.log("App is running in the port 3030...")
 
 // function response(req, res){
